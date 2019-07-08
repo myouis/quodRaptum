@@ -1,8 +1,33 @@
-<audio autoplay="" loop="" src="fire.mp3"></audio>
-<div id="container"><div id="clear"></div><div id="box"></div><div id="title"><a href="/web/20141005203631/http://searchfortheblindeye.com/">&larr;</a>&nbsp; 1.1 &nbsp;<a href="page2.html">&rarr;</a></div>
-<div id="text1">"Ow! Ow! Seriously? Was that really necessary?"<br><br>
-Grembert grabbed at the oddly smooth absence where his ear had been just a moment ago and cursed his luck. "What the hell is wrong with you witches? Can't you just accept cash or livestock like everyone else?" The witch cackled with glee, as witches are wont to do, and did a wobbly dance of amusement, her bracelets and baubles jangling in a most annoying fashion. "FOR THE FOOL WHO LISTENS, BUT YET CANNOT HEAR! A PRICE MOST CRUEL, I TAKETH YOUR EAR!"<br><br>
-She continued to dance with uncoordinated abandon. Now there were claps involved. She was really getting into it.  "Look," grunted Grembert, "you got my ear, you've done your stupid dance, now can I please get what I came here for?" "You should be thankful!" cautioned the witch, now doing The Cabbage Patch, "My sister is less charitable than I! She takes hands! And sometimes lesser organs. One ear is a small price to pay for THIS!"<br><br>
-The witch reached down her own throat, like, up to her elbow, and pulled out a glowing purple vial. "That's disgusting!" exclaimed Grembert. "What?" grunted the witch. "That thing you did, reaching into your throat. How did you do that?" replied Grembert. "I'm a witch," said the witch. "Now sprinkle this into the eyes of the one you deem worthy. But only use it ONCE, or there will be ironic, horrifying consequences, you hear me?!"<br><br>
-"I half-heard you," muttered Grembert, rubbing his earless stump, and with that he crawled back out of the witch's lair.</div></div>
-</body></html><!--
+<!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("July 26, 2019 18:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "WELCOME TO THE RAPTURE";
+  }
+}, 1000);
+</script>
